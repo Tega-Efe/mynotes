@@ -1,0 +1,19 @@
+{
+  "notes": [
+    {
+      "id": "2f76",
+      "body": "New note\n\n\n\n\nlet getContent = (note) => {\n    //Get content after title\n    let title = getTitle(note)\n    let content = note.body.replaceAll('\\n', '')\n    content = content.replaceAll(title, '')\n\n    //Slice content and add three dots in over 45 characters to show there is more\n    if (content.length > 45) {\n        return content.slice(0, 45) + '...'\n    } else {\n        return content\n    }\n\n}\n",
+      "updated": "2024-04-29T13:10:21.284Z"
+    },
+    {
+      "id": "c8a8",
+      "body": "Preven The vampire",
+      "updated": "2024-04-29T13:10:28.772Z"
+    },
+    {
+      "id": "0c37",
+      "body": "<button onClick={deleteNote}>Done</button>\n\n\n",
+      "updated": "2024-04-29T13:10:24.196Z"
+    }
+  ]
+}
